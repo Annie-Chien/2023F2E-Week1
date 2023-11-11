@@ -7,8 +7,6 @@ import VNameImg from '../../assets/main/name-v.png';
 import MobileHNameImg from '../../assets/main/name-h-mobile.png';
 /** Components */
 import Container from '../common/Container/Container';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { Carousel } from 'react-responsive-carousel';
 
 /* ------------------ Default Component ----------------- */
 const Main = () => {
