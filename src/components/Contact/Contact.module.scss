@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.contact {
+  background: var(--color-light);
+  padding-top: 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  justify-content: center;
+
+  gap: 2rem;
+
+  @include respond(tablet) {
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+  }
+}
+.text {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.catImg {
+  transform: translateY(32%);
+  margin-top: -10%;
+  width: 60%;
+
+  @include respond(tablet) {
+    margin: auto;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+  }
+}

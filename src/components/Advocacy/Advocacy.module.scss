@@ -1,0 +1,29 @@
+@import '../../index.scss';
+.advocacy {
+  background-color: var(--color-light);
+  position: relative;
+  padding-bottom: 4rem;
+}
+.content {
+  position: relative;
+}
+
+.box {
+  border: 5px solid var(--color-primary);
+  border-radius: 8rem 0px;
+  margin-inline-start: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: -15px 20px 0px 0px var(--color-primary);
+  background-color: var(--color-white);
+  color: #333;
+  @include respond(phone) {
+    margin-inline-start: 4rem;
+    border: 2.5px solid var(--color-primary);
+
+    box-shadow: -2.5px 5px 0px 0px var(--color-primary);
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../index.scss';
+
+.nav {
+  position: sticky;
+
+  top: 0;
+  right: 0;
+  background-color: var(--color-white);
+  z-index: 1000;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  gap: 3rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+
+  li {
+    font-size: 1.8rem;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+
+    &:hover:not(:last-child) {
+      border-bottom: 3px solid var(--color-primary);
+
+      @include respond(tablet) {
+        border-bottom-color: var(--color-white);
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    // width < 768
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    top: 100%;
+    bottom: 0;
+    height: 100vh;
+    right: -1px;
+    width: 50vw;
+    padding: 2rem;
+    align-items: end;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    li > a {
+      color: var(--color-white);
+      font-size: 2.5rem;
+    }
+
+    &.show {
+      transform: translateX(0%);
+    }
+  }
+  @include respond(phone) {
+    // width < 425
+
+    align-items: center;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 4rem;
+  color: var(--color-primary);
+  cursor: pointer;
+
+  @include respond(tablet) {
+    // width < 768
+    display: block;
+  }
+}

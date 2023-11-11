@@ -1,0 +1,48 @@
+@import '../../../index.scss';
+
+.button {
+  border-radius: 10rem;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  color: var(--color-white);
+  transition: transform 0.3s;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: inherit;
+  min-width: 15rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  // SIZE
+  &.sm {
+    padding: 1rem;
+  }
+  &.lg {
+    padding: 1.5rem 3rem;
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
+  }
+
+  // TYPE
+  &.text {
+    background-color: transparent;
+    letter-spacing: 2px;
+    border-bottom: 1px solid currentColor;
+    color: var(--color-primary);
+    border-radius: 0;
+    font-weight: 500;
+  }
+
+  &.outline {
+    border: 3px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+}

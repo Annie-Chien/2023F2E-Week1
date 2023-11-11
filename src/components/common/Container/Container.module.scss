@@ -1,0 +1,4 @@
+.container {
+  max-width: 100%;
+  padding: 0 clamp(1rem, 5vw, 8rem); //rwd, to be adjusted
+}

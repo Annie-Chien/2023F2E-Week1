@@ -1,0 +1,53 @@
+@import '../../index.scss';
+
+.policy {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding-block: 2rem 6rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  @include respond(tablet) {
+    flex-wrap: wrap;
+  }
+
+  & > *:nth-child(2) {
+    transform: translateY(2rem);
+    @include respond(tablet) {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Sub-components
+.card {
+  width: 100%;
+
+  border-radius: 4px;
+  background-color: var(--color-white);
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s;
+
+  // display: -webkit-box;
+  // -webkit-line-clamp: 14;
+  // -webkit-box-orient: vertical;
+  // overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  .note {
+    list-style-position: outside;
+    margin-left: 2rem;
+    color: #333;
+  }
+}
