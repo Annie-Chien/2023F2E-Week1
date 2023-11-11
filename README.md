@@ -3,7 +3,8 @@
 2023 年 F2E 比賽的第一週挑戰：立委競選官網。
 雖然本週的作品不會列入比賽成績，不過看到美美的設計稿還是忍不住手癢想練習下。
 
-🎨 設計稿[在這](<https://www.figma.com/file/GDvhrmKAtFgcHe5aVjBci0/2023TheF2E-第一階段-立委競選官網(UNA)?type=design&node-id=0-1&mode=design&t=wLcmiQddLGDfqCd7-0>)（Designed by UNA）
+🎨 [設計稿連結](<https://www.figma.com/file/GDvhrmKAtFgcHe5aVjBci0/2023TheF2E-第一階段-立委競選官網(UNA)?type=design&node-id=0-1&mode=design&t=wLcmiQddLGDfqCd7-0>)（Designed by UNA）
+🖥 [Demo 連結](https://annie-f2e-2023w1.netlify.app)
 
 ## Built with 🔧
 
