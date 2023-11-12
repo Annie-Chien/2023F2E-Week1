@@ -66,6 +66,8 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 html {
+  overflow-x: hidden;
+
   scroll-behavior: smooth;
   // 10px/16px = 62.5% -> 1rem = 10px
   font-size: 62.5%;

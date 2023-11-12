@@ -87,7 +87,7 @@
     width: 350px;
   }
   @include respond(phone) {
-    bottom: 30%;
+    bottom: 25%;
     transform: translateY(100%);
   }
 }

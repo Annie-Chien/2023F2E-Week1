@@ -30,6 +30,9 @@
       grid-row: 1/2;
     }
   }
+  @include respond(phone) {
+    height: 700px;
+  }
 }
 
 // Sub-components
